@@ -1,0 +1,102 @@
+.header {
+    width: 400px;
+    height: 100px;
+    background-color: #141f40;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+} /* float解除のための定型文 */
+
+
+
+.left {
+    width: 150px;
+    height: 250px;
+    background-color: #80bfa8;
+    float: left;
+}
+
+
+.right {
+    width: 250px;
+    height: 250px;
+    float: left;
+}
+.sub {
+    float: left;
+}
+.sub-left {
+    float: left;
+}
+.box1 {
+    background-color: #dbd400;
+    width: 150px;
+    height: 50px;
+
+}
+.box2 {
+    background-color: #0093b7;
+    width: 150px;
+    height: 100px;
+}
+
+.box3 {
+    background-color: #ff9e6b;
+    width: 100px;
+    height: 150px;
+    float: left;
+}
+
+
+.box4 {
+    background-color: #8c2727;
+    width: 250px;
+    height: 100px;
+    float: left;
+}
+
+
+
+.footer {
+    width: 400px;
+    height: 100px;
+    background-color: #d98d30;
+}
+
+@media screen and (max-width: 767px) {
+
+    .header, .footer {
+        width: 300px;
+    }
+    .main {
+        width: 300px;
+    }
+    .left {
+        width: 100px;
+    }
+    .right {
+        width: 200px;
+    }
+    .box1, .box2 {
+        width: 125px;
+    }
+    .box3 {
+        width: 75px;
+    }
+    .box4 {
+        width: 200px;
+    }
+}
+@media screen and (max-width: 479px) {
+    * {
+        clear: both;
+    }
+    .header, .footer,.main,.left,.right,.box1, .box2,.box3, .box4 {
+        width: 150px;
+    }
+
+
+}
