@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 400px;
+}
+.header {
+    width: 100%;
+    background-color: #141f40;
+    height: 100px;
+    display: flex;
+    justify-content: right;
+}
+.wrapper .header .nav {
+    margin: 20px 20px;
+    background: #FFF;
+    width: 160px;
+    height: 60px;
+
+}
+.nav ul {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav ul li {
+    list-style-type: none;
+    background-color: #a9004b;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.main {
+    width: 100%;
+    background-color: #80bfa8;
+    height: 250px;
+    display: flex;
+}
+.left {
+    width: 150px;
+    background-color: #80bfa8;
+    height: 250px;
+}
+.right {
+    width: 250px;
+    background-color: #8c2727;
+    height: 250px;
+    
+}
+.right ul {
+    margin-left: 40px; 
+    margin-right: 60px;
+    margin-top: 40px;
+}
+.right ul li {
+    list-style-type: none;
+    background-color: #ff863f;
+    height: 50px;
+    border: 5px solid #FFF;;
+    box-sizing: border-box;
+    margin-bottom:10px;
+}
+.footer {
+    width: 100%;
+    background-color: #d98d30;
+    height: 100px;
+}
+
+/* responsive css */
+@media screen and (max-width: 600px) {
+    .wrapper {
+        width: 200px;
+    }
+    .header {
+        width: 100%;
+        background-color: #141f40;
+        height: 200px;
+    }
+    .wrapper .header .nav {
+        margin: 20px auto;
+        background: #FFF;
+        width: 60px;
+        height: 160px;
+    }
+    .nav ul {
+        display: block;
+    }
+    .nav ul li {
+        list-style-type: none;
+        background-color: #a9004b;
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .main {
+        width: 100%;
+        background-color: #80bfa8;
+        display: block;
+        height: 100px;
+    }
+    .left {
+        width: 200px;
+        background-color: #80bfa8;
+        height: 100px;
+        display: block;
+    }
+    .right {
+        width: 200px;
+        background-color: #8c2727;
+        height: 180px;
+        display: inline-block;
+    }
+    .right ul {
+        margin-left: 30px; 
+        margin-top: 20px;
+    }
+    .right ul li {
+        list-style-type: none;
+        background-color: #ff863f;
+        width: 140px;
+        height: 40px;
+        border: 5px solid #FFF;
+        box-sizing: border-box;
+        margin-bottom:10px;
+    }
+    .footer {
+        display: block;
+        width: 200px;
+        background-color: #d98d30;
+        height: 280px;
+    }
+}
